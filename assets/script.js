@@ -19,12 +19,6 @@ function createBoard(){
     }   
 }
 
-function lasChild(){
-    let childCounter = document.getElementById('71');
-    if(childCounter.childElementCount !== 1){
-
-    }
-}
 
 
 
