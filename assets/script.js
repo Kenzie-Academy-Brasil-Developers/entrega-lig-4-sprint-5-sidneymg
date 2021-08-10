@@ -18,6 +18,7 @@ function createBoard(){
             divColuna.appendChild(divLinha);
             divLinha.setAttribute('id', `${i}${j}`);
             divLinha.classList.add('linha');
+
             if(j === 7){
                 divLinha.classList.add('ocupado')
             }
