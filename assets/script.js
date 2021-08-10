@@ -19,11 +19,8 @@ function createBoard(){
             divLinha.setAttribute('id', `${i}${j}`);
             divLinha.classList.add('linha');
         }
-    }
-
-    
+    }   
 }
-
 
 function playGame(){
     createBoard();
@@ -36,7 +33,6 @@ function playGame(){
         button.addEventListener('click', function(){
             let checkColumn = button.id
           
-
             for (let i = 6; i >= 1; i--){
                 let divCheck = document.getElementById(`${checkColumn}${i}`)
                 if (divCheck.childElementCount === 0){
@@ -47,7 +43,6 @@ function playGame(){
                     break
                 }
             }
-            
             console.log(checkColumn);
             console.log(button);
         })
