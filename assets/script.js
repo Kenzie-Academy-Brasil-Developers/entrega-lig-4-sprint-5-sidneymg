@@ -37,7 +37,6 @@ function playGame() {
 
     boardArr.forEach((button)=>{
         button.addEventListener('click', function(){
-<<<<<<< HEAD
             let checkColumn = button.id;
             let lastBox = document.getElementById(`${checkColumn}1`);
             cont++;
@@ -48,18 +47,6 @@ function playGame() {
 
             else if (cont === 1){
                 
-=======
-
-        
-
-
-            cont++
-
-
-            let checkColumn = button.id;
-
-            if (cont === 1){
->>>>>>> 6918d0267b86bc8421afb64013e8ffc5f058ff1a
                 for (let i = 6; i >= 1; i--){
                     let divCheck = document.getElementById(`${checkColumn}${i}`);
                     if (divCheck.childElementCount === 0){
@@ -70,19 +57,11 @@ function playGame() {
                         break
                     }
                 }
-<<<<<<< HEAD
                 validCont = cont;
             }
 
             else if (cont === 2){
                 
-=======
-                console.log(checkColumn);
-                console.log(button);
-         
-            }
-            else if (cont === 2){
->>>>>>> 6918d0267b86bc8421afb64013e8ffc5f058ff1a
                 for (let i = 6; i >= 1; i--){
                     let divCheck = document.getElementById(`${checkColumn}${i}`);
                     if (divCheck.childElementCount === 0){
@@ -96,11 +75,6 @@ function playGame() {
                 validCont = cont;
                 cont = 0
             }
-<<<<<<< HEAD
-
-=======
-        
->>>>>>> 6918d0267b86bc8421afb64013e8ffc5f058ff1a
         })
     })
 }
