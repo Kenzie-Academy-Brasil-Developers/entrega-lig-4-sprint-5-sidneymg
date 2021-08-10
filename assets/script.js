@@ -24,16 +24,23 @@ function playGame() {
     const board = document.querySelectorAll('.coluna');
     const boardArr = [...board];
     let cont = 0;
-    
+    let validCont = 0;
+
     boardArr.forEach((button)=>{
         
         button.addEventListener('click', function(){
-            cont++
-            let checkColumn = button.id
-            if (cont === 1){
-          
+            let checkColumn = button.id;
+            let lastBox = document.getElementById(`${checkColumn}1`);
+            cont++;
+            
+            if (lastBox.childElementCount === 1){
+                cont = validCont;
+            }
+
+            else if (cont === 1){
+                
                 for (let i = 6; i >= 1; i--){
-                    let divCheck = document.getElementById(`${checkColumn}${i}`)
+                    let divCheck = document.getElementById(`${checkColumn}${i}`);
                     if (divCheck.childElementCount === 0){
                         let disc = new createDiv;
                         disc.classList.add('disc');
@@ -42,13 +49,13 @@ function playGame() {
                         break
                     }
                 }
-                console.log(checkColumn);
-                console.log(button);
+                validCont = cont;
             }
 
-            if (cont === 2){
+            else if (cont === 2){
+                
                 for (let i = 6; i >= 1; i--){
-                    let divCheck = document.getElementById(`${checkColumn}${i}`)
+                    let divCheck = document.getElementById(`${checkColumn}${i}`);
                     if (divCheck.childElementCount === 0){
                         let disc = new createDiv;
                         disc.classList.add('disc', 'player2');
@@ -57,8 +64,10 @@ function playGame() {
                         break
                     }
                 }
-                cont = 0;
+                validCont = cont;
+                cont = 0
             }
+
         })
     })
 }
