@@ -27,24 +27,42 @@ function playGame(){
 
     const board = document.querySelectorAll('.coluna');
     const boardArr = [...board];
+    let cont = 0;
     
     boardArr.forEach((button)=>{
         
         button.addEventListener('click', function(){
+            cont++
             let checkColumn = button.id
+            if (cont === 1){
           
-            for (let i = 6; i >= 1; i--){
-                let divCheck = document.getElementById(`${checkColumn}${i}`)
-                if (divCheck.childElementCount === 0){
-                    let disc = new createDiv;
-                    disc.classList.add('disc');
-                    divCheck.appendChild(disc);
-                    console.log(divCheck)
-                    break
+                for (let i = 6; i >= 1; i--){
+                    let divCheck = document.getElementById(`${checkColumn}${i}`)
+                    if (divCheck.childElementCount === 0){
+                        let disc = new createDiv;
+                        disc.classList.add('disc');
+                        divCheck.appendChild(disc);
+                        console.log(divCheck)
+                        break
+                    }
                 }
+                console.log(checkColumn);
+                console.log(button);
             }
-            console.log(checkColumn);
-            console.log(button);
+
+            if (cont === 2){
+                for (let i = 6; i >= 1; i--){
+                    let divCheck = document.getElementById(`${checkColumn}${i}`)
+                    if (divCheck.childElementCount === 0){
+                        let disc = new createDiv;
+                        disc.classList.add('disc', 'player2');
+                        divCheck.appendChild(disc);
+                        console.log(divCheck)
+                        break
+                    }
+                }
+                cont = 0;
+            }
         })
     })
 }
