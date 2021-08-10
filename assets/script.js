@@ -19,15 +19,6 @@ function createBoard(){
     }   
 }
 
-function lasChild(){
-    let childCounter = document.getElementById('71');
-    if(childCounter.childElementCount !== 1){
-
-    }
-}
-
-
-
 function playGame() {
     createBoard();
     const board = document.querySelectorAll('.coluna');
@@ -45,7 +36,7 @@ function playGame() {
                 cont = validCont;
             }
 
-            else if (cont === 1){
+            if (cont === 1){
                 
                 for (let i = 6; i >= 1; i--){
                     let divCheck = document.getElementById(`${checkColumn}${i}`);
@@ -57,10 +48,10 @@ function playGame() {
                         break
                     }
                 }
-                validCont = cont;
+                validCont = 1;
             }
 
-            else if (cont === 2){
+            if (cont === 2){
                 
                 for (let i = 6; i >= 1; i--){
                     let divCheck = document.getElementById(`${checkColumn}${i}`);
@@ -72,7 +63,7 @@ function playGame() {
                         break
                     }
                 }
-                validCont = cont;
+                validCont = 2;
                 cont = 0
             }
         })
