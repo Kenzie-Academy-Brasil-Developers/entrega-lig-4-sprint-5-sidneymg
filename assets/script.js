@@ -19,6 +19,15 @@ function createBoard(){
     }   
 }
 
+function lasChild(){
+    let childCounter = document.getElementById('71');
+    if(childCounter.childElementCount !== 1){
+
+    }
+}
+
+
+
 function playGame() {
     createBoard();
     const board = document.querySelectorAll('.coluna');
@@ -26,12 +35,17 @@ function playGame() {
     let cont = 0;
     
     boardArr.forEach((button)=>{
-        
         button.addEventListener('click', function(){
+
+        
+
+
             cont++
-            let checkColumn = button.id
+
+
+            let checkColumn = button.id;
+
             if (cont === 1){
-          
                 for (let i = 6; i >= 1; i--){
                     let divCheck = document.getElementById(`${checkColumn}${i}`)
                     if (divCheck.childElementCount === 0){
@@ -44,9 +58,9 @@ function playGame() {
                 }
                 console.log(checkColumn);
                 console.log(button);
+         
             }
-
-            if (cont === 2){
+            else if (cont === 2){
                 for (let i = 6; i >= 1; i--){
                     let divCheck = document.getElementById(`${checkColumn}${i}`)
                     if (divCheck.childElementCount === 0){
@@ -59,6 +73,7 @@ function playGame() {
                 }
                 cont = 0;
             }
+        
         })
     })
 }
