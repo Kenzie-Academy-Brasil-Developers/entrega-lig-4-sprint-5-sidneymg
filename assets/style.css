@@ -17,6 +17,7 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+    font-family: 'Star Jedi';
 }
 
 :root{
@@ -29,8 +30,8 @@ html{
 
 }
 main{
-    width: 100;
-    height: 400px;
+    width: 100%;
+    height: 375px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -40,30 +41,38 @@ main{
 #nav {
     background: url("http://wallpapercave.com/wp/pEeUsp1.jpg");
     width: 100%;
-    height: 110px;
+    height: 80px;
 }
 #logo {
-    width: 180px;
+    width: 150px;
     display: flex;
     margin: 0 auto;
 }
 #hr {
     width: 100%;
-    height: 30px;
+    height: 15px;
     background: #000000;
     background: linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.568) 90%);
     background: -webkit-linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.473) 90%);
     background: -moz-linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.562) 90%);
+}
+#hr2 {
+    width: 100%;
+    height: 15px;
+    background: #000000;
+    background: linear-gradient(90deg,#000000 0%, rgba(255, 255, 0, 0.568) 90%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, rgba(255, 255, 0, 0.473) 90%);
+    background: -moz-linear-gradient(90deg,#000000 0%, rgba(255, 255, 0, 0.562) 90%);
 }
 /* #a6a6ff; */
 #tela-test{
     display: flex;
     border: 5px solid black;
     border-radius: 10px;
-    background-color: var(--main-color);
-    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
-    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
-    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    background: rgba(89,0,0,0.41);
+    background: linear-gradient(90deg,rgba(89,0,0,0.41) 0%, rgba(46,0,0,0.38) 28%, rgba(0,7,38,0.4) 72%, rgba(0,17,110,0.37) 100%);
+    background: -webkit-linear-gradient(90deg,rgba(89,0,0,0.41) 0%, rgba(46,0,0,0.38) 28%, rgba(0,7,38,0.4) 72%, rgba(0,17,110,0.37) 100%);
+    background: -moz-linear-gradient(90deg,rgba(89,0,0,0.41) 0%, rgba(46,0,0,0.38) 28%, rgba(0,7,38,0.4) 72%, rgba(0,17,110,0.37) 100%);
 }
 .coluna{
     width: 100%;
@@ -94,8 +103,31 @@ main{
 
 }
 
-@media only screen and (max-width: 768px) {
+footer {
+    background: url("http://wallpapercave.com/wp/pEeUsp1.jpg");
+    width: 100%;
+    height: 80px;}
 
+@media only screen and (min-width: 768px) {
+
+#logo {width: 225px;}
+#nav {height: 120px;}
+
+
+main{
+    height: 400px;
+}
+    
+.linha{
+    width: 37px;
+    height: 37px;
+}
+.disc{
+    width: 37px;
+    height: 37px;
+}
+footer {
+    height: 80px;}
 
 
 }
