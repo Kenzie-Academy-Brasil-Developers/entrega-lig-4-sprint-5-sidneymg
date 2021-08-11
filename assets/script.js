@@ -50,6 +50,10 @@ function playGame() {
                 }
                 validCont = 1;
             }
+<<<<<<< HEAD
+=======
+
+>>>>>>> c355b213e8935c473c6a3f41c2087c08bab1ade0
             if (cont === 2){
                 
                 for (let i = 6; i >= 1; i--){
@@ -66,6 +70,7 @@ function playGame() {
                 validCont = 2;
                 cont = 0
             }
+<<<<<<< HEAD
 
             const winningArrays = [
                 [0, 1, 2, 3],
@@ -189,6 +194,8 @@ function playGame() {
               }
               checkBoard();
 
+=======
+>>>>>>> c355b213e8935c473c6a3f41c2087c08bab1ade0
         })
     })
 }
