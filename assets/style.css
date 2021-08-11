@@ -37,7 +37,7 @@ main{
     margin-top: 0;
 }
 
-#nav {
+#top {
     background: url("https://media.giphy.com/media/UTS6HOANJvMDVX77i1/giphy.gif");
     background-size: cover;
     width: 100%;
@@ -104,14 +104,13 @@ main{
 }
 
 footer {
-    /* background: url("img/giphy.webp"); */
     background: url("https://media.giphy.com/media/Rm3ZRGVUJrCDwK9KbU/giphy.gif");
-    background-size:25%;
+    background-size:50%;
     height: 80px;
     padding-top:10px;
 }
 
-#logoka {
+#ka {
     width: 85px;
     filter: brightness(1.5);
     position: absolute;
@@ -146,12 +145,9 @@ h2{
 @media only screen and (min-width: 768px) {
 
 #logo {width: 225px;}
-#nav {height: 120px;}
+#top {height: 120px;}
 
-
-main{
-    height: 400px;
-}
+main{height: 400px;}
     
 .linha{
     width: 37px;
@@ -162,12 +158,11 @@ main{
     height: 37px;
 }
 footer {
-    height: 120px;}
+    height: 120px;
+    background-size:25%;}
 
 
-#logoka {
-    width: 110px;
-}
+#ka {width: 110px;}
   
 h2 {
     font-size: 13px;
