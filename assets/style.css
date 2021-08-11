@@ -18,29 +18,57 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+:root{
+--main-color: rgba(42, 44, 110, 0.747);
+
+}
 html{
     height: 100%;
-    background: radial-gradient(rgba(0, 0, 255, 0.623), purple);
+    background: radial-gradient(var(--main-color), rgb(0, 0, 0));
 
 }
 main{
-    width: 320px;
+    width: 100;
     height: 400px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
+    margin-top: 0;
 }
+
+#nav {
+    background: url("http://wallpapercave.com/wp/pEeUsp1.jpg");
+    width: 100%;
+    height: 110px;
+}
+#logo {
+    width: 180px;
+    display: flex;
+    margin: 0 auto;
+}
+#hr {
+    width: 100%;
+    height: 30px;
+    background: #000000;
+    background: linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.568) 90%);
+    background: -webkit-linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.473) 90%);
+    background: -moz-linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.562) 90%);
+}
+/* #a6a6ff; */
 #tela-test{
     display: flex;
     border: 5px solid black;
     border-radius: 10px;
-    background-color: #a6a6ff;
+    background-color: var(--main-color);
+    box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -4px rgba(0,0,0,0.75);
 }
 .coluna{
     width: 100%;
     height: 100%;
-    border: 2px solid #a6a6ff;
+    border: 2px solid  var(--main-color);
     display: flex;
     flex-direction: column;
 }
@@ -48,7 +76,7 @@ main{
     width: 30px;
     height: 30px;
     border: 2px solid black;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.534);
     border-radius: 100%;
     margin-top: 3px;
 }
@@ -56,10 +84,18 @@ main{
 .disc{
     width: 30px;
     height: 30px;
-    background-color: red;
+    background: radial-gradient(red,rgb(87, 17, 0));
     border-radius: 100%;
 }
 
 .player2{
-    background-color: black;
+    background-image: ;
+    background: radial-gradient(blue, rgb(7, 0, 100));
+
+}
+
+@media only screen and (max-width: 768px) {
+
+
+
 }
