@@ -96,13 +96,18 @@ main{
     background: radial-gradient(red,rgb(87, 17, 0));
     border-radius: 100%;
 }
-
-.player2{
-    background-image: ;
-    background: radial-gradient(blue, rgb(7, 0, 100));
-
+.player1{
+    background-color:rgb(255, 67, 67);
+    background-image: url(../img/darthvader.png);
+    background-position: center;
+    background-size: cover;
 }
-
+.player2{
+    background-color: rgb(67, 67, 255);
+    background-image: url(../img/jedi.png);
+    background-position: center;
+    background-size: cover;
+}
 footer {
     background: url("https://media.giphy.com/media/Rm3ZRGVUJrCDwK9KbU/giphy.gif");
     background-size:50%;
@@ -115,6 +120,39 @@ footer {
     width: 75px;
     filter: brightness(1.5);
     position: absolute;
+}
+
+
+#vitoria1{
+    width: 280px; 
+    position: absolute;
+    top: 160px;
+    height: 180px;
+    background-image: url(/img/03105104984615.jpg);
+    background-size: 320px;
+    border: yellow solid 5px;
+}
+.vitoria1Class{left: 200%;}
+h6{
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#vitoria2{
+    width: 280px; 
+    position: absolute;
+    top: 160px;
+    height: 180px;
+    background-image: url(/img/Darth-Vader.jpg);
+    background-size: 320px;
+    border: yellow solid 5px;
+}
+.vitoria2Class{left: 200%;}
+h5{
+    color: whitesmoke;
+    margin-top: 30px;
+    margin-left: 20px;
 }
 
 @keyframes blinking {
@@ -141,7 +179,8 @@ h2{
     animation-iteration-count: infinite;
     animation-delay: -1s;
 }
-  
+h6{font-family: 'Star Jedi';}
+h5{font-family: 'Star Jedi';}
 
 @media only screen and (min-width: 768px) {
 
@@ -169,5 +208,8 @@ h2 {
     font-size: 13px;
     margin-top: 5px;
 }
-      
+}
+
+@media screen and (min-width: 375px){
+    
 }
