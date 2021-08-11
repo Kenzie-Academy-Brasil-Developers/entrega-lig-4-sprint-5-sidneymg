@@ -154,7 +154,17 @@ h5{
     margin-top: 30px;
     margin-left: 20px;
 }
-
+input{
+    position: absolute;
+    left: 25%;
+    width: 150px;
+    height: 35px;
+    font-size: 17px;
+    background-color: tomato;
+    border-radius: 20px;
+    border-style: none;
+}
+.botao{margin-top: 15px;}
 @keyframes blinking {
     from,
     49.9% {
@@ -181,6 +191,7 @@ h2{
 }
 h6{font-family: 'Star Jedi';}
 h5{font-family: 'Star Jedi';}
+input{font-family: 'Star Jedi'}
 
 @media only screen and (min-width: 768px) {
 
@@ -211,5 +222,5 @@ h2 {
 }
 
 @media screen and (min-width: 375px){
-    
+
 }
