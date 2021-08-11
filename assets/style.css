@@ -30,7 +30,7 @@ html{
 }
 main{
     width: 100%;
-    height: 300px;
+    height: 310px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,8 +106,9 @@ main{
 footer {
     background: url("https://media.giphy.com/media/Rm3ZRGVUJrCDwK9KbU/giphy.gif");
     background-size:50%;
-    height: 80px;
+    height:80px;
     padding-top:10px;
+    text-shadow:1px 1px 1px rgb(99, 99, 85);
 }
 
 #ka {
@@ -136,7 +137,7 @@ h2{
     margin-top: 5px;
     opacity: 0;
     animation: blinking linear;
-    animation-duration: 4.65s;
+    animation-duration: 2.65s, 2s;
     animation-iteration-count: infinite;
     animation-delay: -1s;
 }
