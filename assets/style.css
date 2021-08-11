@@ -111,7 +111,7 @@ footer {
 }
 
 #ka {
-    width: 85px;
+    width: 75px;
     filter: brightness(1.5);
     position: absolute;
 }
@@ -136,9 +136,9 @@ h2{
     margin-top: 5px;
     opacity: 0;
     animation: blinking linear;
-    animation-duration: 5s;
+    animation-duration: 4.65s;
     animation-iteration-count: infinite;
-    animation-delay: -4s;
+    animation-delay: -1s;
 }
   
 
