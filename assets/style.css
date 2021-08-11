@@ -17,13 +17,12 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
-    font-family: 'Star Jedi';
 }
 
 :root{
 --main-color: rgba(42, 44, 110, 0.747);
-
 }
+
 html{
     height: 100%;
     background: radial-gradient(var(--main-color), rgb(0, 0, 0));
@@ -31,7 +30,7 @@ html{
 }
 main{
     width: 100%;
-    height: 375px;
+    height: 300px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -106,7 +105,25 @@ main{
 footer {
     background: url("http://wallpapercave.com/wp/pEeUsp1.jpg");
     width: 100%;
-    height: 80px;}
+    height: 80px;
+    padding-top:10px;
+}
+
+#logoka {
+    width: 85px;
+    filter: brightness(1.5);
+    position: absolute;
+}
+
+h2{
+    font-size: 8px;
+    font-weight: 100;
+    font-family: 'Star Jedi';
+    text-align: center;
+    color: wheat;
+    margin-top: 5px;
+}
+  
 
 @media only screen and (min-width: 768px) {
 
@@ -127,7 +144,16 @@ main{
     height: 37px;
 }
 footer {
-    height: 80px;}
+    height: 120px;}
 
 
+#logoka {
+    width: 110px;
+}
+  
+h2 {
+    font-size: 13px;
+    margin-top: 5px;
+}
+      
 }
