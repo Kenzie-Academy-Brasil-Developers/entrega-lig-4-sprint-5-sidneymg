@@ -94,6 +94,15 @@ function createBoard(){
     }   
 }
 
+function lasChild(){
+    let childCounter = document.getElementById('71');
+    if(childCounter.childElementCount !== 1){
+
+    }
+}
+
+
+
 function playGame() {
     createBoard();
     const board = document.querySelectorAll('.coluna');
@@ -108,33 +117,35 @@ function playGame() {
 
     boardArr.forEach((button)=>{
         button.addEventListener('click', function(){
+
+        
+
+
+            cont++
+
+
             let checkColumn = button.id;
-            let lastBox = document.getElementById(`${checkColumn}1`);
-            cont++;
-            
-            if (lastBox.childElementCount === 1){
-                cont = validCont;
-            }
 
             if (cont === 1){
-                
                 for (let i = 6; i >= 1; i--){
-                    let divCheck = document.getElementById(`${checkColumn}${i}`);
+                    let divCheck = document.getElementById(`${checkColumn}${i}`)
                     if (divCheck.childElementCount === 0){
                         let disc = new createDiv;
-                        disc.classList.add('disc', 'player1');
+                        disc.classList.add('disc');
                         divCheck.appendChild(disc);
                         console.log(divCheck);
                         break
                     }
                 }
-                validCont = 1;
+                console.log(checkColumn);
+                console.log(button);
+         
             }
 
             if (cont === 2){
                 
                 for (let i = 6; i >= 1; i--){
-                    let divCheck = document.getElementById(`${checkColumn}${i}`);
+                    let divCheck = document.getElementById(`${checkColumn}${i}`)
                     if (divCheck.childElementCount === 0){
                         let disc = new createDiv;
                         disc.classList.add('disc', 'player2');
@@ -143,8 +154,7 @@ function playGame() {
                         break
                     }
                 }
-                validCont = 2;
-                cont = 0
+                cont = 0;
             }
 
             for(let i = 0; i < boxesArr.length; i++){
