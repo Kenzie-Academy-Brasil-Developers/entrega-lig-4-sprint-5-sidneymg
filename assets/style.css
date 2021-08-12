@@ -18,30 +18,66 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
+
+:root{
+--main-color: rgba(42, 44, 110, 0.747);
+}
+
 html{
     height: 100%;
-    /* background: radial-gradient(rgba(0, 0, 255, 0.623), purple); */
-    background-image: url(../img/f9a8ed161524ca06e0d5250fe2d33e51.gif);
-    background-size: 800px;
-    background-position: center;
+    background: radial-gradient(var(--main-color), rgb(0, 0, 0));
+
 }
 main{
-    width: 320px;
-    height: 400px;
+    width: 100%;
+    height: 310px;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 0;
 }
+
+#top {
+    background: url("https://media.giphy.com/media/UTS6HOANJvMDVX77i1/giphy.gif");
+    background-size: cover;
+    width: 100%;
+    height: 80px;
+}
+#logo {
+    width: 150px;
+    display: flex;
+    margin: 0 auto;
+}
+#hr {
+    width: 100%;
+    height: 15px;
+    background: #000000;
+    background: linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.568) 90%);
+    background: -webkit-linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.473) 90%);
+    background: -moz-linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.562) 90%);
+}
+#hr2 {
+    width: 100%;
+    height: 15px;
+    background: #000000;
+    background: linear-gradient(90deg,#000000 0%, rgba(255, 255, 0, 0.568) 90%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, rgba(255, 255, 0, 0.473) 90%);
+    background: -moz-linear-gradient(90deg,#000000 0%, rgba(255, 255, 0, 0.562) 90%);
+}
+/* #a6a6ff; */
 #tela-test{
     display: flex;
     border: 5px solid black;
     border-radius: 10px;
-    background-color: #a6a6ff;
+    background: rgba(89,0,0,0.41);
+    background: linear-gradient(90deg,rgba(89,0,0,0.41) 0%, rgba(46,0,0,0.38) 28%, rgba(0,7,38,0.4) 72%, rgba(0,17,110,0.37) 100%);
+    background: -webkit-linear-gradient(90deg,rgba(89,0,0,0.41) 0%, rgba(46,0,0,0.38) 28%, rgba(0,7,38,0.4) 72%, rgba(0,17,110,0.37) 100%);
+    background: -moz-linear-gradient(90deg,rgba(89,0,0,0.41) 0%, rgba(46,0,0,0.38) 28%, rgba(0,7,38,0.4) 72%, rgba(0,17,110,0.37) 100%);
 }
 .coluna{
     width: 100%;
     height: 100%;
-    border: 2px solid #a6a6ff;
+    border: 2px solid  var(--main-color);
     display: flex;
     flex-direction: column;
 }
@@ -49,9 +85,7 @@ main{
     width: 30px;
     height: 30px;
     border: 2px solid black;
-    background-image: url(../img/f9a8ed161524ca06e0d5250fe2d33e51.gif);
-    background-position: center;
-    background-size: 500px;
+    background-color: rgba(255, 255, 255, 0.534);
     border-radius: 100%;
     margin-top: 3px;
 }
@@ -59,33 +93,160 @@ main{
 .disc{
     width: 30px;
     height: 30px;
+    background: radial-gradient(red,rgb(87, 17, 0));
     border-radius: 100%;
     background-image: url(../img/download\ \(2\).jpeg);
     background-size: 43px;
     background-position: center;
 }
-.player2{
-    background-image: url(../img/download\ \(1\).jpeg);
-    background-size: 50px;
+.player1{
+    background-color:rgb(255, 67, 67);
+    background-image: url(../img/darthvader.png);
     background-position: center;
+    background-size: cover;
 }
-#secao{
-    display: flex;
-    margin-top: 20px;
+.player2{
+    background-color: rgb(67, 67, 255);
+    background-image: url(../img/jedi.png);
+    background-position: center;
+    background-size: cover;
 }
-#logo{
-    width: 100px;
-    height: 100px;
+footer {
+    background: url("https://media.giphy.com/media/Rm3ZRGVUJrCDwK9KbU/giphy.gif");
+    background-size:50%;
+    height:80px;
+    padding-top:10px;
+    text-shadow:1px 1px 1px rgb(99, 99, 85);
 }
-#nomes{
-    margin-top: 20px;
-    display: flex;
-    flex-direction: column;
+
+#ka {
+    width: 75px;
+    filter: brightness(1.5);
+    position: absolute;
 }
-h1{
-    color: whitesmoke;
-    font-family: monospace;
+
+
+#vitoria1{
+    width: 280px; 
+    position: absolute;
+    top: 160px;
+    height: 180px;
+    background-image: url(/img/03105104984615.jpg);
+    background-size: 320px;
+    border: yellow solid 5px;
+    margin-left: 12px;
 }
-#star{
-    width: 100px;
+.vitoria1Class{left: 100%;}
+h6{
+    color: yellow;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#vitoria2{
+    width: 280px; 
+    position: absolute;
+    top: 160px;
+    height: 180px;
+    background-image: url(/img/Darth-Vader.jpg);
+    background-size: 320px;
+    border: yellow solid 5px;
+    margin-left: 12px;
+}
+.vitoria2Class{left: 100%;}
+h5{
+    color: yellow;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+input{
+    position: absolute;
+    left: 25%;
+    width: 150px;
+    height: 35px;
+    font-size: 17px;
+    background-color: tomato;
+    border-radius: 20px;
+    border-style: none;
+}
+.botao{margin-top: 15px;}
+@keyframes blinking {
+    from,
+    49.9% {
+      opacity: 0;
+    }
+    50%,
+    to {
+      opacity: 1;
+    }
+  }
+
+h2{
+    font-size: 8px;
+    font-weight: 100;
+    font-family: 'Star Jedi';
+    text-align: center;
+    color: rgb(255, 255, 255);
+    margin-top: 5px;
+    opacity: 0;
+    animation: blinking linear;
+    animation-duration: 2.65s, 2s;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
+}
+h6{font-family: 'Star Jedi';}
+h5{font-family: 'Star Jedi';}
+input{font-family: 'Star Jedi'}
+
+@media only screen and (min-width: 768px) {
+
+#logo {width: 225px;}
+#top {height: 120px;}
+
+main{height: 400px;}
+    
+.linha{
+    width: 37px;
+    height: 37px;
+}
+.disc{
+    width: 37px;
+    height: 37px;
+}
+footer {
+    height: 120px;
+    background-size:25%;}
+
+
+#ka {width: 110px;}
+  
+h2 {
+    font-size: 13px;
+    margin-top: 5px;
+}
+}
+
+@media screen and (min-width: 321px){
+    #vitoria1{margin-left: 40px;}
+    #vitoria2{margin-left: 40px;}
+}
+@media screen and (min-width: 376px){
+    #vitoria1{margin-left: 68px;}
+    #vitoria2{margin-left: 68px;}
+}
+@media screen and (min-width: 426px){
+    #vitoria1{margin-left: 240px; margin-top: 80px;}
+    #vitoria2{margin-left: 240px; margin-top: 80px;}
+}
+@media screen and (min-width: 769px){
+    #vitoria1{margin-left: 368px;}
+    #vitoria2{margin-left: 368px;}
+}
+@media screen and (min-width: 1025px){
+    #vitoria1{margin-left: 575px;}
+    #vitoria2{margin-left: 575px;}
+}
+@media screen and (min-width: 1441px){
+    #vitoria1{margin-left: 1135px;}
+    #vitoria2{margin-left: 1135px;}
 }
