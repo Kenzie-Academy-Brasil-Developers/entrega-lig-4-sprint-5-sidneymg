@@ -79,6 +79,46 @@ function createDiv (){
     return div;
 }
 
+function victoryNoticeP1(){
+    
+    let victory = document.createElement('div');
+    let h2 = document.createElement('h2');
+    let h3 = document.createElement('h3');
+    
+    victory.setAttribute('id','vitoria2');
+    victory.appendChild(h2);
+    victory.appendChild(h3)
+    divtest.appendChild(victory);
+
+    h2.innerText = 'Belo massacre!'
+    h3.innerText = 'Click para jogar novamente'
+
+    victory.addEventListener('click', function(){
+        victory.parentNode.removeChild(victory)
+        location.reload();
+    })
+}
+
+function victoryNoticeP2(){
+    
+    let victory = document.createElement('div');
+    let h2 = document.createElement('h2');
+    let h3 = document.createElement('h3');
+    
+    victory.setAttribute('id','vitoria1');
+    victory.appendChild(h2);
+    victory.appendChild(h3)
+    divtest.appendChild(victory);
+
+    h2.innerText = 'que a força esteja com você!'
+    h3.innerText = 'Click para jogar novamente'
+
+    victory.addEventListener('click', function(){
+        victory.parentNode.removeChild(victory)
+        location.reload();
+    })
+}
+
 function createBoard(){
     for (let i = 1; i <= 7; i++){
         let divColuna = new createDiv;
@@ -170,13 +210,11 @@ function playGame() {
                     }
                 }
                 if (checkWin === 4){
-                    let x = document.getElementById('vitoria2');
-                    x.classList.remove('vitoria2Class');
+                    victoryNoticeP1();
                     console.log('team vader!')
                 }
                 if (checkWin2 === 4){
-                    let x = document.getElementById('vitoria1');
-                    x.classList.remove('vitoria1Class');
+                    victoryNoticeP2();
                     console.log('Você venceu!')
                 }
             }
