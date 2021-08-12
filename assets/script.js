@@ -170,9 +170,13 @@ function playGame() {
                     }
                 }
                 if (checkWin === 4){
-                    console.log('Você venceu!')
+                    let x = document.getElementById('vitoria2');
+                    x.classList.remove('vitoria2Class');
+                    console.log('team vader!')
                 }
                 if (checkWin2 === 4){
+                    let x = document.getElementById('vitoria1');
+                    x.classList.remove('vitoria1Class');
                     console.log('Você venceu!')
                 }
             }

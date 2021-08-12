@@ -96,13 +96,18 @@ main{
     background: radial-gradient(red,rgb(87, 17, 0));
     border-radius: 100%;
 }
-
-.player2{
-    background-image: ;
-    background: radial-gradient(blue, rgb(7, 0, 100));
-
+.player1{
+    background-color:rgb(255, 67, 67);
+    background-image: url(../img/darthvader.png);
+    background-position: center;
+    background-size: cover;
 }
-
+.player2{
+    background-color: rgb(67, 67, 255);
+    background-image: url(../img/jedi.png);
+    background-position: center;
+    background-size: cover;
+}
 footer {
     background: url("https://media.giphy.com/media/Rm3ZRGVUJrCDwK9KbU/giphy.gif");
     background-size:50%;
@@ -117,6 +122,51 @@ footer {
     position: absolute;
 }
 
+
+#vitoria1{
+    width: 280px; 
+    position: absolute;
+    top: 160px;
+    height: 180px;
+    background-image: url(/img/03105104984615.jpg);
+    background-size: 320px;
+    border: yellow solid 5px;
+    margin-left: 12px;
+}
+.vitoria1Class{left: 100%;}
+h6{
+    color: yellow;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+
+#vitoria2{
+    width: 280px; 
+    position: absolute;
+    top: 160px;
+    height: 180px;
+    background-image: url(/img/Darth-Vader.jpg);
+    background-size: 320px;
+    border: yellow solid 5px;
+    margin-left: 12px;
+}
+.vitoria2Class{left: 100%;}
+h5{
+    color: yellow;
+    margin-top: 30px;
+    margin-left: 20px;
+}
+input{
+    position: absolute;
+    left: 25%;
+    width: 150px;
+    height: 35px;
+    font-size: 17px;
+    background-color: tomato;
+    border-radius: 20px;
+    border-style: none;
+}
+.botao{margin-top: 15px;}
 @keyframes blinking {
     from,
     49.9% {
@@ -141,7 +191,9 @@ h2{
     animation-iteration-count: infinite;
     animation-delay: -1s;
 }
-  
+h6{font-family: 'Star Jedi';}
+h5{font-family: 'Star Jedi';}
+input{font-family: 'Star Jedi'}
 
 @media only screen and (min-width: 768px) {
 
@@ -169,5 +221,29 @@ h2 {
     font-size: 13px;
     margin-top: 5px;
 }
-      
+}
+
+@media screen and (min-width: 321px){
+    #vitoria1{margin-left: 40px;}
+    #vitoria2{margin-left: 40px;}
+}
+@media screen and (min-width: 376px){
+    #vitoria1{margin-left: 68px;}
+    #vitoria2{margin-left: 68px;}
+}
+@media screen and (min-width: 426px){
+    #vitoria1{margin-left: 240px; margin-top: 80px;}
+    #vitoria2{margin-left: 240px; margin-top: 80px;}
+}
+@media screen and (min-width: 769px){
+    #vitoria1{margin-left: 368px;}
+    #vitoria2{margin-left: 368px;}
+}
+@media screen and (min-width: 1025px){
+    #vitoria1{margin-left: 575px;}
+    #vitoria2{margin-left: 575px;}
+}
+@media screen and (min-width: 1441px){
+    #vitoria1{margin-left: 1135px;}
+    #vitoria2{margin-left: 1135px;}
 }
