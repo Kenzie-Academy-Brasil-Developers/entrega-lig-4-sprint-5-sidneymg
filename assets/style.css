@@ -131,8 +131,9 @@ footer {
     background-image: url(/img/03105104984615.jpg);
     background-size: 320px;
     border: yellow solid 5px;
+    margin-left: 12px;
 }
-.vitoria1Class{left: 200%;}
+.vitoria1Class{left: 100%;}
 h6{
     color: yellow;
     margin-top: 30px;
@@ -147,8 +148,9 @@ h6{
     background-image: url(/img/Darth-Vader.jpg);
     background-size: 320px;
     border: yellow solid 5px;
+    margin-left: 12px;
 }
-.vitoria2Class{left: 200%;}
+.vitoria2Class{left: 100%;}
 h5{
     color: yellow;
     margin-top: 30px;
@@ -221,6 +223,27 @@ h2 {
 }
 }
 
-@media screen and (min-width: 375px){
-
+@media screen and (min-width: 321px){
+    #vitoria1{margin-left: 40px;}
+    #vitoria2{margin-left: 40px;}
+}
+@media screen and (min-width: 376px){
+    #vitoria1{margin-left: 68px;}
+    #vitoria2{margin-left: 68px;}
+}
+@media screen and (min-width: 426px){
+    #vitoria1{margin-left: 240px; margin-top: 80px;}
+    #vitoria2{margin-left: 240px; margin-top: 80px;}
+}
+@media screen and (min-width: 769px){
+    #vitoria1{margin-left: 368px;}
+    #vitoria2{margin-left: 368px;}
+}
+@media screen and (min-width: 1025px){
+    #vitoria1{margin-left: 575px;}
+    #vitoria2{margin-left: 575px;}
+}
+@media screen and (min-width: 1441px){
+    #vitoria1{margin-left: 1135px;}
+    #vitoria2{margin-left: 1135px;}
 }
