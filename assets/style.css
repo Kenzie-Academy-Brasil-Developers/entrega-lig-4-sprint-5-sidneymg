@@ -88,19 +88,18 @@ main{
     height: 30px;
     background: radial-gradient(red,rgb(87, 17, 0));
     border-radius: 100%;
-    background-image: url(../img/download\ \(2\).jpeg);
     background-size: 43px;
     background-position: center;
 }
 .player1{
     background-color:rgb(255, 67, 67);
-    background-image: url(../assets/darthvader.png);
+    background-image: url(../assets/img/darthvaderDisco.png);
     background-position: center;
     background-size: cover;
 }
 .player2{
     background-color: rgb(67, 67, 255);
-    background-image: url(../assets/jedi.png);
+    background-image: url(../assets/img/jediDisco.png);
     background-position: center;
     background-size: cover;
 }
@@ -121,16 +120,17 @@ main{height: 100%;}
     margin-left: 13px;
 }
 #vitoria1{
-    width: 280px; 
+    width: 80%; 
+    max-width: 300px;
     position: absolute;
-    top: 160px;
+    top: 36%;
     height: 180px;
-    background-image: url(/assets/03105104984615.jpg);
+    background-image: url(../assets/img/yoda.jpg);
     background-size: 320px;
     text-align: center;
     border: yellow solid 2px;
     border-radius: 10px;
-    margin-left: 12px;
+    margin-right: 15%;
     box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
     -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
@@ -139,9 +139,9 @@ main{height: 100%;}
 #vitoria2{
     width: 280px; 
     position: absolute;
-    top: 250px;
+    top: 200px;
     height: 180px;
-    background-image: url(/assets/Darth-Vader.jpg);
+    background-image: url(../assets/img/Darth-Vader.jpg);
     background-size: 320px;
     text-align: center;
     border: yellow solid 2px;
@@ -158,7 +158,7 @@ main{height: 100%;}
     top: 160px;
     height: 180px;
     text-align: center;
-    background-image: url(/assets/empate.jpeg);
+    background-image: url(../assets/img/empate.jpeg);
     background-size: 320px;
     border: yellow solid 2px;
     border-radius: 10px;
@@ -254,9 +254,9 @@ h4 {font-size: 11px;}
 }
 @media screen and (min-width: 321px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;} #empate{margin-left: -15px;}}
 @media screen and (min-width: 376px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;} #empate{margin-left: -15px;}}
-@media screen and (min-width: 426px){#vitoria1{margin-left: 13px; top: 260px;} #vitoria2{margin-left: 13px; top: 260px;}#empate{margin-left: 12px; top: 260px;}}
-@media screen and (min-width: 769px){#vitoria1{margin-left: 14px; top: 280px;} #vitoria2{margin-left: 14px; top: 280px;} #empate{margin-left: 14px; top: 260px;}}
-@media screen and (min-width: 1025px){#vitoria1{margin-left: 14px; top: 260px;} #vitoria2{margin-left: 14px; top: 260px;} #empate{margin-left: 14px; top: 260px;}
+@media screen and (min-width: 426px){#vitoria1{margin-left: 5px; top: 38%;} #vitoria2{margin-left: 5px; top: 38%;}#empate{margin-left: 5px; top: 38%;}}
+@media screen and (min-width: 769px){#vitoria1{margin-left: 5px; top: 38%;} #vitoria2{margin-left: 5px; top: 38%;} #empate{margin-left: 5px; top: 38%;}}
+@media screen and (min-width: 1025px){#vitoria1{margin-left: 5px; top: 38%;} #vitoria2{margin-left: 5px; top: 38%;} #empate{margin-left: 5px; top: 38%;}
 footer {height: 120px; background-size:25%;}}
 @media screen and (min-width: 1440px){footer {height: 180px; background-size:25%;}}
 
