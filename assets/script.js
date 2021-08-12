@@ -79,9 +79,7 @@ function createDiv() {
     return div;
 }
 
-
 function victoryNoticeP1(){
-    
     let victory = document.createElement('div');
     let h2 = document.createElement('h2');
     let h3 = document.createElement('h3');
@@ -99,9 +97,7 @@ function victoryNoticeP1(){
         location.reload();
     })
 }
-
 function victoryNoticeP2(){
-    
     let victory = document.createElement('div');
     let h2 = document.createElement('h2');
     let h3 = document.createElement('h3');
@@ -120,7 +116,6 @@ function victoryNoticeP2(){
     })
 }
 function draw(){
-    
     let empate = document.createElement('div');
     let h2 = document.createElement('h2');
     let h3 = document.createElement('h3');
@@ -165,7 +160,6 @@ function playGame() {
     let cont = 0;
     let validCont = 0;
 
-
     boardArr.forEach((button) => {
         button.addEventListener('click', function () {
             let checkColumn = button.id;
@@ -184,7 +178,6 @@ function playGame() {
                         let disc = new createDiv;
                         disc.classList.add('disc', 'player1');
                         divCheck.appendChild(disc);
-                        console.log(divCheck);
                         break
                     }
                 }
@@ -199,7 +192,6 @@ function playGame() {
                         let disc = new createDiv;
                         disc.classList.add('disc', 'player2');
                         divCheck.appendChild(disc);
-                        console.log(divCheck);
                         break
                     }
                 }
@@ -239,10 +231,7 @@ function playGame() {
                     draw();
                 }
             }
-            console.log(boxPlayer1);
-            console.log(boxPlayer2);
         })
     })
 }
-
 playGame();
