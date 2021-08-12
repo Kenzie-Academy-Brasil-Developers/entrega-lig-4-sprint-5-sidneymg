@@ -111,6 +111,9 @@ footer {
     padding-top:10px;
     text-shadow:1px 1px 1px rgb(99, 99, 85);
 }
+body{height: 71.55%;}
+main{height: 100%;}
+
 #ka {
     width: 75px;
     filter: brightness(1.5);
@@ -136,7 +139,7 @@ footer {
 #vitoria2{
     width: 280px; 
     position: absolute;
-    top: 160px;
+    top: 250px;
     height: 180px;
     background-image: url(/assets/Darth-Vader.jpg);
     background-size: 320px;
@@ -239,16 +242,21 @@ h3{font-family: 'Bebas Neue', cursive;; color:yellow; font-size: 18px; text-shad
 #ka {width: 110px;}
 .linha{width: 37px; height: 37px;}
 .disc{width: 37px; height: 37px;}
-main{height: 400px;}   
+main{height: 100%;}  
+
+body{
+    height: 64%;
+}
+
 footer {height: 112px; background-size:33.33%;color:yellow}
 h2 {font-size: 13px;margin-top: 5px;}
 h4 {font-size: 11px;}
 }
 @media screen and (min-width: 321px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;} #empate{margin-left: -15px;}}
 @media screen and (min-width: 376px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;} #empate{margin-left: -15px;}}
-@media screen and (min-width: 426px){#vitoria1{margin-left: 12px; margin-top: 80px;} #vitoria2{margin-left: 12px; margin-top: 80px;}#empate{margin-left: 12px; margin-top: 80px;}}
-@media screen and (min-width: 769px){#vitoria1{margin-left: 12px;} #vitoria2{margin-left: 12px;} #empate{margin-left: 12px;}}
-@media screen and (min-width: 1024px){#vitoria1{margin-left: 14px;} #vitoria2{margin-left: 14px;} #empate{margin-left: 12px;}
+@media screen and (min-width: 426px){#vitoria1{margin-left: 13px; top: 260px;} #vitoria2{margin-left: 13px; top: 260px;}#empate{margin-left: 12px; top: 260px;}}
+@media screen and (min-width: 769px){#vitoria1{margin-left: 14px; top: 280px;} #vitoria2{margin-left: 14px; top: 280px;} #empate{margin-left: 14px; top: 260px;}}
+@media screen and (min-width: 1025px){#vitoria1{margin-left: 14px; top: 260px;} #vitoria2{margin-left: 14px; top: 260px;} #empate{margin-left: 14px; top: 260px;}
 footer {height: 120px; background-size:25%;}}
 @media screen and (min-width: 1440px){footer {height: 180px; background-size:25%;}}
 
