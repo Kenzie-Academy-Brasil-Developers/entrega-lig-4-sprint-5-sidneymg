@@ -131,7 +131,8 @@ footer {
     background-image: url(/img/03105104984615.jpg);
     background-size: 320px;
     border: yellow solid 5px;
-    margin-left: 12px;
+    margin-left: -12px;
+    text-align: center;
 }
 
 
@@ -143,7 +144,8 @@ footer {
     background-image: url(/img/Darth-Vader.jpg);
     background-size: 320px;
     border: yellow solid 5px;
-    margin-left: 12px;
+    margin-left: -12px;
+    text-align: center;
 }
 
 
@@ -171,9 +173,9 @@ h2{
     animation-iteration-count: infinite;
     animation-delay: -1s;
 }
-h6{font-family: 'Star Jedi';}
-h5{font-family: 'Star Jedi';}
-input{font-family: 'Star Jedi'}
+#vitoria1 h2{color: yellow; font-size: 20px; margin-bottom: 70px;}
+#vitoria2 h2{color: yellow; font-size: 20px; margin-bottom: 100px;}
+h3{font-family: 'Star Jedi'; color:yellow; font-size: 14px;}
 
 @media only screen and (min-width: 768px) {
 
@@ -204,26 +206,22 @@ h2 {
 }
 
 @media screen and (min-width: 321px){
-    #vitoria1{margin-left: 40px;}
-    #vitoria2{margin-left: 40px;}
+    #vitoria1{margin-left: -15px;}
+    #vitoria2{margin-left: -15px;}
 }
 @media screen and (min-width: 376px){
-    #vitoria1{margin-left: 68px;}
-    #vitoria2{margin-left: 68px;}
+    #vitoria1{margin-left: -15px;}
+    #vitoria2{margin-left: -15px;}
 }
 @media screen and (min-width: 426px){
-    #vitoria1{margin-left: 240px; margin-top: 80px;}
-    #vitoria2{margin-left: 240px; margin-top: 80px;}
+    #vitoria1{margin-left: 12px; margin-top: 80px;}
+    #vitoria2{margin-left: 12px; margin-top: 80px;}
 }
 @media screen and (min-width: 769px){
-    #vitoria1{margin-left: 368px;}
-    #vitoria2{margin-left: 368px;}
+    #vitoria1{margin-left: 12px;}
+    #vitoria2{margin-left: 12px;}
 }
 @media screen and (min-width: 1025px){
-    #vitoria1{margin-left: 575px;}
-    #vitoria2{margin-left: 575px;}
-}
-@media screen and (min-width: 1441px){
-    #vitoria1{margin-left: 1135px;}
-    #vitoria2{margin-left: 1135px;}
+    #vitoria1{margin-left: 14px;}
+    #vitoria2{margin-left: 14px;}
 }
