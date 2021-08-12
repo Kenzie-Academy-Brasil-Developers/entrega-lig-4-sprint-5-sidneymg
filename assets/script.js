@@ -111,7 +111,7 @@ function victoryNoticeP2(){
     victory.appendChild(h3);
     divtest.appendChild(victory);
 
-    h2.innerText = 'Que a força esteja com você!'
+    h2.innerText = 'que a força esteja com você!'
     h3.innerText = 'Click para jogar novamente'
 
     victory.addEventListener('click', function(){
