@@ -91,7 +91,7 @@ function victoryNoticeP1(){
     victory.appendChild(h3)
     divtest.appendChild(victory);
 
-    h2.innerText = 'Belo massacre!'
+    h2.innerText = 'o império espera por você!'
     h3.innerText = 'Click para jogar novamente'
 
     victory.addEventListener('click', function(){
@@ -111,7 +111,7 @@ function victoryNoticeP2(){
     victory.appendChild(h3);
     divtest.appendChild(victory);
 
-    h2.innerText = 'que a força esteja com você!'
+    h2.innerText = 'esteja a força com você!'
     h3.innerText = 'Click para jogar novamente'
 
     victory.addEventListener('click', function(){
@@ -237,9 +237,6 @@ function playGame() {
                 }
                 if (boxPlayer1.length + boxPlayer2.length === 42){
                     draw();
-                    // let empate = document.getElementById('empate');
-                    // empate.classList.remove('empateClass');
-                    // console.log('team empate!')
                 }
             }
             console.log(boxPlayer1);

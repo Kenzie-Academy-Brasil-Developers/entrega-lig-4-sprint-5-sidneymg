@@ -18,10 +18,8 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-
 :root{--main-color: rgba(42, 44, 110, 0.747);}
 html{height: 100%;background: radial-gradient(var(--main-color), rgb(0, 0, 0));}
-
 main{
     width: 100%;
     height: 310px;
@@ -85,7 +83,6 @@ main{
     border-radius: 100%;
     margin-top: 3px;
 }
-
 .disc{
     width: 30px;
     height: 30px;
@@ -111,16 +108,12 @@ footer {
     padding-top:10px;
     text-shadow:1px 1px 1px rgb(99, 99, 85);
 }
-
 #ka {
     width: 75px;
     filter: brightness(1.5);
     position: absolute;
     margin-left: 13px;
-
 }
-
-
 #vitoria1{
     width: 280px; 
     position: absolute;
@@ -136,11 +129,7 @@ footer {
     -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
     -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 }
-
 .vitoria1Class{left: 100%;}
-
-
-
 #vitoria2{
     width: 280px; 
     position: absolute;
@@ -157,7 +146,6 @@ footer {
     -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 }
 .vitoria2Class{left: 100%;}
-
 #empate {
     width: 280px; 
     position: absolute;
@@ -169,11 +157,13 @@ footer {
     border: yellow solid 2px;
     border-radius: 10px;
     margin-left: 12px;
-
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
 }
-
+#empate h3, h2{text-align: center;}
+#empate h2{margin-top: 20px;}
 .empateClass{left: 100%;}
-
 
 input{
     position: absolute;
@@ -185,7 +175,6 @@ input{
     border-radius: 20px;
     border-style: none;
     text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
-
 }
 @keyframes blinking {
     from,
@@ -197,6 +186,7 @@ input{
       opacity: 1;
     }
   }
+h1, h2, h3, h4, h5, h6{font-family: 'Star Jedi';}
 h4{
     font-size: 8px;
     font-family: 'Star Jedi';   
@@ -214,6 +204,7 @@ h4{
     animation-iteration-count: infinite;
     animation-delay: -1s;
 }
+
 h2 {
     font-family: 'Bebas Neue', cursive;
     color: yellow; 
@@ -240,29 +231,31 @@ h2 {
     cursor: pointer;
 }
 h3{font-family: 'Bebas Neue', cursive;; color:yellow; font-size: 18px; text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
-}
 
+}
 /* MEDIA QUERIE */
 @media only screen and (min-width: 768px) {
-
 #logo {width: 225px;}
 #top {height: 120px;}
 #ka {width: 110px;}
-
 .linha{width: 37px; height: 37px;}
 .disc{width: 37px; height: 37px;}
 main{height: 400px;}   
 footer {height: 112px; background-size:33.33%;color:yellow}
 h2 {font-size: 13px;margin-top: 5px;}
 h4 {font-size: 11px;}
+
 }
+
+
 
 @media screen and (min-width: 321px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;} #empate{margin-left: -15px;}}
 @media screen and (min-width: 376px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;} #empate{margin-left: -15px;}}
 @media screen and (min-width: 426px){#vitoria1{margin-left: 12px; margin-top: 80px;} #vitoria2{margin-left: 12px; margin-top: 80px;}#empate{margin-left: 12px; margin-top: 80px;}}
 @media screen and (min-width: 769px){#vitoria1{margin-left: 12px;} #vitoria2{margin-left: 12px;} #empate{margin-left: 12px;}}
 @media screen and (min-width: 1024px){#vitoria1{margin-left: 14px;} #vitoria2{margin-left: 14px;} #empate{margin-left: 12px;}
-footer {height: 120px; background-size:25%;}
-}
+footer {height: 120px; background-size:25%;}}
 @media screen and (min-width: 1440px){footer {height: 180px; background-size:25%;}}
+
+
 
