@@ -18,29 +18,60 @@ time, mark, audio, video {
 	font: inherit;
 	vertical-align: baseline;
 }
-html{
-    height: 100%;
-    background: radial-gradient(rgba(0, 0, 255, 0.623), purple);
-
-}
+:root{--main-color: rgba(42, 44, 110, 0.747);}
+html{height: 100%;background: radial-gradient(var(--main-color), rgb(0, 0, 0));}
 main{
-    width: 320px;
-    height: 400px;
+    width: 100%;
+    height: 310px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50%;
+    margin-top: 0;
 }
+#top {
+    background: url("https://media.giphy.com/media/UTS6HOANJvMDVX77i1/giphy.gif");
+    background-size: cover;
+    width: 100%;
+    height: 80px;
+}
+#logo {
+    width: 150px;
+    display: flex;
+    margin: 0 auto;
+}
+#hr {
+    width: 100%;
+    height: 15px;
+    background: #000000;
+    background: linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.568) 90%);
+    background: -webkit-linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.473) 90%);
+    background: -moz-linear-gradient(270deg,#000000 0%, rgba(255, 255, 0, 0.562) 90%);
+}
+#hr2 {
+    width: 100%;
+    height: 15px;
+    background: #000000;
+    background: linear-gradient(90deg,#000000 0%, rgba(255, 255, 0, 0.568) 90%);
+    background: -webkit-linear-gradient(90deg,#000000 0%, rgba(255, 255, 0, 0.473) 90%);
+    background: -moz-linear-gradient(90deg,#000000 0%, rgba(255, 255, 0, 0.562) 90%);
+}
+
 #tela-test{
     display: flex;
     border: 5px solid black;
     border-radius: 10px;
-    background-color: #a6a6ff;
+    background: rgba(89,0,0,0.41);
+    background: linear-gradient(90deg,rgba(89,0,0,0.41) 0%, rgba(46,0,0,0.38) 28%, rgba(0,7,38,0.4) 72%, rgba(0,17,110,0.37) 100%);
+    background: -webkit-linear-gradient(90deg,rgba(89,0,0,0.41) 0%, rgba(46,0,0,0.38) 28%, rgba(0,7,38,0.4) 72%, rgba(0,17,110,0.37) 100%);
+    background: -moz-linear-gradient(90deg,rgba(89,0,0,0.41) 0%, rgba(46,0,0,0.38) 28%, rgba(0,7,38,0.4) 72%, rgba(0,17,110,0.37) 100%);
+    box-shadow: 1px -1px 46px 4px rgba(138,138,108,0.75);
+    -webkit-box-shadow: 1px -1px 46px 4px rgba(138,138,108,0.75);
+    -moz-box-shadow: 1px -1px 46px 4px rgba(138,138,108,0.75);
 }
 .coluna{
     width: 100%;
     height: 100%;
-    border: 2px solid #a6a6ff;
+    border: 2px solid  var(--main-color);
     display: flex;
     flex-direction: column;
 }
@@ -48,7 +79,186 @@ main{
     width: 30px;
     height: 30px;
     border: 2px solid black;
-    background-color: #fff;
+    background-color: rgba(255, 255, 255, 0.534);
     border-radius: 100%;
     margin-top: 3px;
 }
+.disc{
+    width: 30px;
+    height: 30px;
+    background: radial-gradient(red,rgb(87, 17, 0));
+    border-radius: 100%;
+    background-image: url(../img/download\ \(2\).jpeg);
+    background-size: 43px;
+    background-position: center;
+}
+.player1{
+    background-color:rgb(255, 67, 67);
+    background-image: url(../assets/darthvader.png);
+    background-position: center;
+    background-size: cover;
+}
+.player2{
+    background-color: rgb(67, 67, 255);
+    background-image: url(../assets/jedi.png);
+    background-position: center;
+    background-size: cover;
+}
+footer {
+    background: url("https://media.giphy.com/media/Rm3ZRGVUJrCDwK9KbU/giphy.gif");
+    background-size:50%;
+    height:80px;
+    padding-top:10px;
+    text-shadow:1px 1px 1px rgb(99, 99, 85);
+}
+body{height: 71.55%;}
+main{height: 100%;}
+
+#ka {
+    width: 75px;
+    filter: brightness(1.5);
+    position: absolute;
+    margin-left: 13px;
+}
+#vitoria1{
+    width: 280px; 
+    position: absolute;
+    top: 160px;
+    height: 180px;
+    background-image: url(/assets/03105104984615.jpg);
+    background-size: 320px;
+    text-align: center;
+    border: yellow solid 2px;
+    border-radius: 10px;
+    margin-left: 12px;
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+}
+.vitoria1Class{left: 100%;}
+#vitoria2{
+    width: 280px; 
+    position: absolute;
+    top: 250px;
+    height: 180px;
+    background-image: url(/assets/Darth-Vader.jpg);
+    background-size: 320px;
+    text-align: center;
+    border: yellow solid 2px;
+    border-radius: 10px;
+    margin-left: -12px;
+    box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    -webkit-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px -7px rgba(0,0,0,0.75);
+}
+.vitoria2Class{left: 100%;}
+#empate {
+    width: 280px; 
+    position: absolute;
+    top: 160px;
+    height: 180px;
+    text-align: center;
+    background-image: url(/assets/empate.jpeg);
+    background-size: 320px;
+    border: yellow solid 2px;
+    border-radius: 10px;
+    margin-left: 12px;
+}
+#empate h3, h2{text-align: center;}
+#empate h2{margin-top: 20px;}
+.empateClass{left: 100%;}
+
+input{
+    position: absolute;
+    left: 25%;
+    width: 150px;
+    height: 35px;
+    font-size: 17px;
+    background-color: tomato;
+    border-radius: 20px;
+    border-style: none;
+    text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+@keyframes blinking {
+    from,
+    49.9% {
+      opacity: 0;
+    }
+    50%,
+    to {
+      opacity: 1;
+    }
+  }
+h1, h2, h3, h4, h5, h6{font-family: 'Star Jedi';}
+h4{
+    font-size: 8px;
+    font-family: 'Star Jedi';   
+    text-align: center;
+    color: rgb(255, 255, 0);
+    text-shadow: 1px -1px 1px rgb(0, 0, 0),
+    -1px 1px 1px rgb(0, 0, 0),
+    -1px 1px 5px rgb(255, 255, 0, 0.582),
+    1px -1px 5px rgb(255, 255, 0, 0.582);
+
+    margin-top: 5px;
+    opacity: 0;
+    animation: blinking linear;
+    animation-duration: 2.65s, 2s;
+    animation-iteration-count: infinite;
+    animation-delay: -1s;
+}
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: yellow; 
+    margin-top:5px;
+    font-size: 28px;
+    margin-bottom: 100px;
+    text-shadow: 1px -1px 1px rgb(0, 0, 0),
+    -1px 1px 1px rgb(0, 0, 0),
+    2px 2px 2px rgba(0,0,0,0.6);;
+}
+#vitoria1 h2{margin-bottom: 100px;  margin-top:15px;   font-size: 24px;}
+#vitoria1:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+#vitoria2 h2{margin-bottom: 100px;  font-size: 28px;}
+#vitoria2:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+#empate h2{margin-bottom: 100px; margin-top: 15px; font-size: 28px;}
+#empate:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+h3{font-family: 'Bebas Neue', cursive;; color:yellow; font-size: 18px; text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+
+}
+/* MEDIA QUERIE */
+@media only screen and (min-width: 768px) {
+#logo {width: 225px;}
+#top {height: 120px;}
+#ka {width: 110px;}
+.linha{width: 37px; height: 37px;}
+.disc{width: 37px; height: 37px;}
+main{height: 100%;}  
+
+body{
+    height: 64%;
+}
+
+footer {height: 112px; background-size:33.33%;color:yellow}
+h2 {font-size: 13px;margin-top: 5px;}
+h4 {font-size: 11px;}
+}
+@media screen and (min-width: 321px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;} #empate{margin-left: -15px;}}
+@media screen and (min-width: 376px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;} #empate{margin-left: -15px;}}
+@media screen and (min-width: 426px){#vitoria1{margin-left: 13px; top: 260px;} #vitoria2{margin-left: 13px; top: 260px;}#empate{margin-left: 12px; top: 260px;}}
+@media screen and (min-width: 769px){#vitoria1{margin-left: 14px; top: 280px;} #vitoria2{margin-left: 14px; top: 280px;} #empate{margin-left: 14px; top: 260px;}}
+@media screen and (min-width: 1025px){#vitoria1{margin-left: 14px; top: 260px;} #vitoria2{margin-left: 14px; top: 260px;} #empate{margin-left: 14px; top: 260px;}
+footer {height: 120px; background-size:25%;}}
+@media screen and (min-width: 1440px){footer {height: 180px; background-size:25%;}}
+
+
+
