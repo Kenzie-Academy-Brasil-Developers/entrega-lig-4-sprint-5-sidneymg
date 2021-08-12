@@ -19,15 +19,9 @@ time, mark, audio, video {
 	vertical-align: baseline;
 }
 
-:root{
---main-color: rgba(42, 44, 110, 0.747);
-}
+:root{--main-color: rgba(42, 44, 110, 0.747);}
+html{height: 100%;background: radial-gradient(var(--main-color), rgb(0, 0, 0));}
 
-html{
-    height: 100%;
-    background: radial-gradient(var(--main-color), rgb(0, 0, 0));
-
-}
 main{
     width: 100%;
     height: 310px;
@@ -36,7 +30,6 @@ main{
     align-items: center;
     margin-top: 0;
 }
-
 #top {
     background: url("https://media.giphy.com/media/UTS6HOANJvMDVX77i1/giphy.gif");
     background-size: cover;
@@ -115,14 +108,7 @@ footer {
     padding-top:10px;
     text-shadow:1px 1px 1px rgb(99, 99, 85);
 }
-
-#ka {
-    width: 75px;
-    filter: brightness(1.5);
-    position: absolute;
-}
-
-
+#ka {width: 75px; filter: brightness(1.5); position: absolute;}
 #vitoria1{
     width: 280px; 
     position: absolute;
@@ -134,8 +120,6 @@ footer {
     margin-left: -12px;
     text-align: center;
 }
-
-
 #vitoria2{
     width: 280px; 
     position: absolute;
@@ -147,8 +131,6 @@ footer {
     margin-left: -12px;
     text-align: center;
 }
-
-
 @keyframes blinking {
     from,
     49.9% {
@@ -159,7 +141,6 @@ footer {
       opacity: 1;
     }
   }
-
 h2{
     font-size: 8px;
     font-weight: 100;
@@ -181,47 +162,15 @@ h3{font-family: 'Star Jedi'; color:yellow; font-size: 14px;}
 
 #logo {width: 225px;}
 #top {height: 120px;}
-
-main{height: 400px;}
-    
-.linha{
-    width: 37px;
-    height: 37px;
-}
-.disc{
-    width: 37px;
-    height: 37px;
-}
-footer {
-    height: 120px;
-    background-size:25%;}
-
-
 #ka {width: 110px;}
-  
-h2 {
-    font-size: 13px;
-    margin-top: 5px;
-}
-}
+.linha{width: 37px; height: 37px;}
+.disc{width: 37px; height: 37px;}
+main{height: 400px;}   
+footer {height: 120px; background-size:25%;}
+h2 {font-size: 13px;margin-top: 5px;}}
 
-@media screen and (min-width: 321px){
-    #vitoria1{margin-left: -15px;}
-    #vitoria2{margin-left: -15px;}
-}
-@media screen and (min-width: 376px){
-    #vitoria1{margin-left: -15px;}
-    #vitoria2{margin-left: -15px;}
-}
-@media screen and (min-width: 426px){
-    #vitoria1{margin-left: 12px; margin-top: 80px;}
-    #vitoria2{margin-left: 12px; margin-top: 80px;}
-}
-@media screen and (min-width: 769px){
-    #vitoria1{margin-left: 12px;}
-    #vitoria2{margin-left: 12px;}
-}
-@media screen and (min-width: 1025px){
-    #vitoria1{margin-left: 14px;}
-    #vitoria2{margin-left: 14px;}
-}
+@media screen and (min-width: 321px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;}}
+@media screen and (min-width: 376px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;}}
+@media screen and (min-width: 426px){#vitoria1{margin-left: 12px; margin-top: 80px;} #vitoria2{margin-left: 12px; margin-top: 80px;}}
+@media screen and (min-width: 769px){#vitoria1{margin-left: 12px;} #vitoria2{margin-left: 12px;}}
+@media screen and (min-width: 1025px){#vitoria1{margin-left: 14px;} #vitoria2{margin-left: 14px;}}
