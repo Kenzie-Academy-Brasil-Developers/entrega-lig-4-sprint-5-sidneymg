@@ -151,6 +151,7 @@ footer {
     position: absolute;
     top: 160px;
     height: 180px;
+    text-align: center;
     background-image: url(/img/empate.jpeg);
     background-size: 320px;
     border: yellow solid 2px;
@@ -163,6 +164,7 @@ footer {
 #empate h3, h2{text-align: center;}
 #empate h2{margin-top: 20px;}
 .empateClass{left: 100%;}
+
 input{
     position: absolute;
     left: 25%;
@@ -187,26 +189,49 @@ input{
 h1, h2, h3, h4, h5, h6{font-family: 'Star Jedi';}
 h4{
     font-size: 8px;
-    font-family: 'Bebas Neue', cursive;
     font-family: 'Star Jedi';   
     text-align: center;
     color: rgb(255, 255, 0);
     text-shadow: 1px -1px 1px rgb(0, 0, 0),
     -1px 1px 1px rgb(0, 0, 0),
-    -1px 1px 5px             rgb(255, 255, 0, 0.582),
-    1px -1px 5px            rgb(255, 255, 0, 0.582);
+    -1px 1px 5px rgb(255, 255, 0, 0.582),
+    1px -1px 5px rgb(255, 255, 0, 0.582);
 
     margin-top: 5px;
-    /* opacity: 0; */
-    /* animation: blinking linear;
+    opacity: 0;
+    animation: blinking linear;
     animation-duration: 2.65s, 2s;
     animation-iteration-count: infinite;
-    animation-delay: -1s; */
+    animation-delay: -1s;
 }
-#vitoria1 h2{color: yellow; font-size: 20px; margin-bottom: 70px;}
-#vitoria2 h2{color: yellow; font-size: 20px; margin-bottom: 70px;}
-#empate h2{color: yellow; font-size: 20px; margin-bottom: 100px;}
-h3{font-family: 'Star Jedi'; color:yellow; font-size: 14px; text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+
+h2 {
+    font-family: 'Bebas Neue', cursive;
+    color: yellow; 
+    margin-top:5px;
+    font-size: 28px;
+    margin-bottom: 100px;
+    text-shadow: 1px -1px 1px rgb(0, 0, 0),
+    -1px 1px 1px rgb(0, 0, 0),
+    2px 2px 2px rgba(0,0,0,0.6);;
+}
+#vitoria1 h2{margin-bottom: 100px;  margin-top:15px;   font-size: 24px;}
+#vitoria1:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+#vitoria2 h2{margin-bottom: 100px;  font-size: 28px;}
+#vitoria2:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+#empate h2{margin-bottom: 100px; margin-top: 15px; font-size: 28px;}
+#empate:hover {
+    filter: brightness(1.2);
+    cursor: pointer;
+}
+h3{font-family: 'Bebas Neue', cursive;; color:yellow; font-size: 18px; text-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+
 }
 /* MEDIA QUERIE */
 @media only screen and (min-width: 768px) {
@@ -216,14 +241,21 @@ h3{font-family: 'Star Jedi'; color:yellow; font-size: 14px; text-shadow: 2px 2px
 .linha{width: 37px; height: 37px;}
 .disc{width: 37px; height: 37px;}
 main{height: 400px;}   
-footer {height: 112px; background-size:33.33%;color:yellow
-}
+footer {height: 112px; background-size:33.33%;color:yellow}
 h2 {font-size: 13px;margin-top: 5px;}
 h4 {font-size: 11px;}
+
+}
+
+
+
 @media screen and (min-width: 321px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;} #empate{margin-left: -15px;}}
 @media screen and (min-width: 376px){#vitoria1{margin-left: -15px;} #vitoria2{margin-left: -15px;} #empate{margin-left: -15px;}}
 @media screen and (min-width: 426px){#vitoria1{margin-left: 12px; margin-top: 80px;} #vitoria2{margin-left: 12px; margin-top: 80px;}#empate{margin-left: 12px; margin-top: 80px;}}
 @media screen and (min-width: 769px){#vitoria1{margin-left: 12px;} #vitoria2{margin-left: 12px;} #empate{margin-left: 12px;}}
 @media screen and (min-width: 1024px){#vitoria1{margin-left: 14px;} #vitoria2{margin-left: 14px;} #empate{margin-left: 12px;}
-footer {height: 120px; background-size:25%;}
-}
+footer {height: 120px; background-size:25%;}}
+@media screen and (min-width: 1440px){footer {height: 180px; background-size:25%;}}
+
+
+
